@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./styles/index.styl"
+import "./styles/index.css"
 import ApiController from './helpers/API'
 import SearchField from './components/SearchField'
 import Genres from './components/Genre'
