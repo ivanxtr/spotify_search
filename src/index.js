@@ -5,4 +5,4 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.hydrate(<App />, document.getElementById('root'));
 
-serviceWorker.unregister();
+serviceWorker.register();
