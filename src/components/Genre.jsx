@@ -5,7 +5,6 @@ function Genre({
   getPlaylistByGenre,
   showGenre
 }) {
-
   const genreView = () => {
     return data.map((item, index) => (
         <div
@@ -24,7 +23,7 @@ function Genre({
     <>
      <section>
       <div className={showGenre ? "genre-container" : "genre-container hide"}>
-        { genreView() }
+        { data ? genreView() : false }
       </div>
      </section>
     </>

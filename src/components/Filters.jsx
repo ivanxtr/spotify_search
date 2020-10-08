@@ -12,19 +12,18 @@ const Filters = ({ showPlaylist, data, filterData, filters }) => {
     ))
   }
 
+  const showMenu = () => {
+    return data && data[0] && data[0].followers
+  }
+
   return (
     <>
-      {
-        data[0] && data[0].followers ?
-        <div className={ showPlaylist ? "filter-container"  : "filter-container hide" }>
+        <div className={ showPlaylist && showMenu() ? "filter-container"  : "filter-container hide" }>
           <div className="filter-order">
             <p> Order By </p>
           </div>
-          { genreFilters() }
+          { filters ? genreFilters() : false }
         </div>
-        :
-        <div></div>
-      }
     </>
   )
 }
