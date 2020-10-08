@@ -33,3 +33,6 @@
   - open a new terminal
   - yarn e2e
 ```
+
+![alt text](https://github.com/ivanxtr/spotify_search/blob/master/E2E.gif?raw=true)
+
