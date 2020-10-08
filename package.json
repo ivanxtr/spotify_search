@@ -8,11 +8,13 @@
     "@babel/register": "^7.7.0",
     "colorette": "^1.2.0",
     "env-cmd": "^10.1.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "express": "^4.17.1",
     "ignore-styles": "^5.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0"
   }
 }

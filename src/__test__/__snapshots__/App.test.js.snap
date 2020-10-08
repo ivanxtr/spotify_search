@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component snapshot render 1`] = `
+<div>
+  <nav>
+    <div
+      className="logo"
+      onClick={[Function]}
+    >
+      <img
+        alt="spotify brand"
+        src="/spotify-logo.png"
+      />
+    </div>
+  </nav>
+  <div
+    className="search-container"
+    onKeyPress={[Function]}
+  >
+    <input
+      className="searchField"
+      onChange={[Function]}
+      placeholder="Type your search"
+      type="search"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      <span>
+         Search on Spotify 
+      </span>
+    </button>
+  </div>
+  <div
+    className="filter-container hide"
+  >
+    <div
+      className="filter-order"
+    >
+      <p>
+         Order By 
+      </p>
+    </div>
+    <button
+      onClick={[Function]}
+    >
+      popularity
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      followers
+    </button>
+  </div>
+  <section>
+    <div
+      className="genre-container"
+    />
+  </section>
+  <section>
+    <div
+      className="playlist-container hide"
+    />
+  </section>
+  <footer>
+    all rigths reserved 2020
+  </footer>
+</div>
+`;

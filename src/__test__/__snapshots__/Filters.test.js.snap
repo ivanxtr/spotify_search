@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Component snapshot render 1`] = `
+<div
+  className="filter-container hide"
+>
+  <div
+    className="filter-order"
+  >
+    <p>
+       Order By 
+    </p>
+  </div>
+</div>
+`;

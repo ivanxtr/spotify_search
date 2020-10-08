@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField Component snapshot render 1`] = `
+<div
+  className="search-container"
+  onKeyPress={[Function]}
+>
+  <input
+    className="searchField"
+    onChange={[Function]}
+    placeholder="Type your search"
+    type="search"
+  />
+  <button
+    onClick={[Function]}
+  >
+    <span>
+       Search on Spotify 
+    </span>
+  </button>
+</div>
+`;

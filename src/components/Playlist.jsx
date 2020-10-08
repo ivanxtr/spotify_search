@@ -1,23 +1,24 @@
 import React from 'react'
 
 function Playlist({ data, showPlaylist, getTrack }) {
-
   const playListView = () => {
     try {
       return data.map((item, index) => (
-        <div
-        key={index}
-        className="playlist"
-        onClick={() => getTrack(item.name)}
-        >
-          {
-            item.images.length > 0 ?
-              <img src={item.images[0].url} alt={ item.name } />
-              :
-              <img src="/empty-album.jpeg" alt={item.name} aria-label={item.name} />
-          }
-          <p> {item.name} </p>
-        </div>
+        item !== null ? 
+          <div
+          key={index}
+          className="playlist"
+          onClick={() => getTrack(item.name)}
+          >
+            {
+              item.images.length > 0 ?
+                <img src={item.images[0].url} alt={ item.name } />
+                :
+                <img src="/empty-album.jpeg" alt={item.name} aria-label={item.name} />
+            }
+            <p> {item.name} </p>
+          </div>
+          : false
       )
     )
     } catch (error) {
@@ -29,7 +30,7 @@ function Playlist({ data, showPlaylist, getTrack }) {
     <>
       <section>
         <div className={ showPlaylist ? "playlist-container" : "playlist-container hide"}>
-          { playListView() }
+          { data ? playListView() : false }
         </div>
       </section>
     </>
