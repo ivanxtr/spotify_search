@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "requestTimeout": 40000,
+  "viewportWidth": 1260,
+  "viewportHeight": 660,
+  "projectId": "spotifySearch"
+}
