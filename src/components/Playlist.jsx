@@ -11,8 +11,8 @@ function Playlist({ data, showPlaylist, getTrack }) {
           onClick={() => getTrack(item.name)}
           >
             {
-              item.images.length > 0 ?
-                <img src={item.images[0].url} alt={ item.name } />
+              item.images.length > 0 && item.images[2] ?
+                <img src={item.images[2].url} alt={ item.name } />
                 :
                 <img src="/empty-album.jpeg" alt={item.name} aria-label={item.name} />
             }

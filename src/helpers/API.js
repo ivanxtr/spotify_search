@@ -27,7 +27,7 @@ const APIController = (() => {
       });
 
       const data = await result.json();
-      return data.categories.items;
+      return data.categories.items || [];
   }
 
   const _getPlaylistByGenre = async (token, genreId) => {
@@ -40,7 +40,7 @@ const APIController = (() => {
       });
 
       const data = await result.json();
-      return data.playlists.items;
+      return data.playlists.items || []
   }
 
   const _getTracks = async (token, tracksEndPoint) => {
@@ -53,7 +53,7 @@ const APIController = (() => {
       });
 
       const data = await result.json();
-      return data.items;
+      return data.items || [];
   }
 
   const _getTrack = async (token, artist) => {
@@ -64,7 +64,7 @@ const APIController = (() => {
       });
 
       const data = await result.json();
-      return data.tracks.items;
+      return data.tracks.items || [];
   }
 
   const _search = async (token, param) => {
@@ -74,7 +74,7 @@ const APIController = (() => {
       });
 
       const data = await result.json();
-      return data.artists.items;
+      return data.artists.items || [];
   }
 
   return {
