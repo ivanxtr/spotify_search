@@ -1,5 +1,14 @@
 # Spotify Searcher
 
+
+![alt text](https://github.com/ivanxtr/spotify_search/blob/master/site-1.png?raw=true)
+
+
+![alt text](https://github.com/ivanxtr/spotify_search/blob/master/site-2.png?raw=true)
+
+
+![alt text](https://github.com/ivanxtr/spotify_search/blob/master/site-3.png?raw=true)
+
 ## Installation
 ```
  yarn install
