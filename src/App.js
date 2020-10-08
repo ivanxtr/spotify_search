@@ -53,6 +53,7 @@ function App() {
 
   const submitSearch = (e, value) => {
     if (e === 'Enter') {
+      setPlaylist([])
       return search(value)
     }
     return false
